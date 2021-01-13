@@ -1,0 +1,18 @@
+---
+Name: fscms
+---
+SilverStripe\Core\Injector\Injector:
+        
+    # Define the default CMS pages controller
+    SilverStripe\CMS\Controllers\CMSPagesController:
+        class: FSCMS\FSCMSPagesController
+        
+    # Define the FS CMS Page Edit controller
+    SilverStripe\CMS\Controllers\CMSPageEditController:
+        class: FSCMS\FSCMSPageEditController
+   
+#defien the FSLeftAndMain config setting        
+FSCMS\FSLeftAndMainExtension:
+    disable_security_admin: true
+    disable_report_admin: true
+    disable_campaign_admin: true

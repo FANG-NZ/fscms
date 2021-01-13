@@ -1,0 +1,29 @@
+{
+    "name": "fscms",
+    "description": "The custom CMS for SilverStripe",
+    "type": "silverstripe-fscms",
+    "keywords": ["silverstripe", "fstudio cms"],
+    "license": "BSD-3-Clause",
+    
+    "authors": [
+        {
+            "name": "Fang Fang",
+            "homepage": "http://www.fstudio.co.nz",
+            "role": "Developer"
+        }
+    ],
+    
+    "require": {
+        "composer/installers": "*",
+        "silverstripe/framework": ">=3.5"
+    },
+	
+    "extra": {
+        
+        "expose": [
+            "css",
+            "images",
+            "thirdparty"
+        ]
+    }
+}
